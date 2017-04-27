@@ -1,0 +1,89 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_180787"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/stock_detail_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/yh_main_of_navigation_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/stock_detail_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/stock_detail_name_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/stock_detail_bnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button_selector" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_stock_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stock_detail_topbar"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/stock_detail_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="0.43"
+            android:background="@drawable/read_adress_bg" >
+        </ListView>
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/stock_detail_topbar"
+        android:content="@+id/myContent1"
+        android:handle="@+id/layout1"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="35px"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/myImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/open" />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@id/myContent1"
+            android:layout_width="288dp"
+            android:layout_height="513dp"
+            android:background="@drawable/background_stripes"
+            android:gravity="fill_vertical"
+            android:numColumns="1"
+            android:paddingTop="10dp" >
+
+        </GridView>
+    </SlidingDrawer>
+
+</RelativeLayout>

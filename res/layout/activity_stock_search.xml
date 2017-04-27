@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--版本号及编码方式-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/stock_search_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/yh_main_of_navigation_bg" >
+
+        <TextView
+            android:id="@+id/stock_search_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/stock_search_name_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/stock_search_bn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/stock_search_topbar"
+        android:background="@color/gravy"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical" >
+
+            <Spinner
+                android:id="@+id/stock_search_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:background="@drawable/spinner_selector"
+                android:entries="@array/stock_exchangeds" />
+
+            <EditText
+                android:id="@+id/stock_search_et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:ems="10"
+                android:hint="请输入股票代码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/stock_search_bn_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_selector_search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stock_search_detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.1"
+            android:background="@drawable/table_item_sticky"
+            android:gravity="center_vertical"
+            android:hint=" 股票名称  \n 股票代码"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/stock_search_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/stock_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal" >
+
+            <Button
+                android:id="@+id/stock_search_bn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/add_button_selector"
+                android:gravity="top|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

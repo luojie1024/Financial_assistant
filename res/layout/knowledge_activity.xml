@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/knoww_main_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/yh_main_of_navigation_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/knoww_main_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/knowledge_main_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/knoww_main_bn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/knoww_main_topbar"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_left"
+                        android:gravity="left"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bookshelf_layer_center" >
+
+                        <Button
+                            android:id="@+id/know_Button1"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="27dp"
+                            android:background="@drawable/suite_bg_for_common_1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="15dp"
+                            android:text="@string/knowledge_book_0_1"
+                            android:textColor="@color/gravy"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/know_Button2"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="27dp"
+                            android:background="@drawable/suite_bg_for_fitment"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="15dp"
+                            android:text="@string/knowledge_book_0_2"
+                            android:textColor="@color/gravy"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_right"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_left"
+                        android:gravity="left"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bookshelf_layer_center" >
+
+                        <Button
+                            android:id="@+id/know_Button3"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/suite_bg_for_fitment"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="15dp"
+                            android:text="@string/knowledge_book_1_1"
+                            android:textColor="@color/gravy"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/know_Button4"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/suite_bg_for_marry"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="15dp"
+                            android:text="@string/knowledge_book_1_2"
+                            android:textColor="@color/gravy"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_right"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_left"
+                        android:gravity="left"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bookshelf_layer_center" >
+
+                        <Button
+                            android:id="@+id/know_Button5"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/suite_bg_for_common_1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="15dp"
+                            android:text="@string/knowledge_book_2_1"
+                            android:textColor="@color/gravy"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_right"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_left"
+                        android:gravity="left"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bookshelf_layer_center" >
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_right"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_left"
+                        android:gravity="left"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bookshelf_layer_center" >
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bookshelf_layer_right"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

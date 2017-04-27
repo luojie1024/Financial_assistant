@@ -1,0 +1,127 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_180787"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/stock_main_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/yh_main_of_navigation_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/stock_main_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/stock_main_name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/stock_main_bn_refresh"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/refresh_button_selector" />
+
+        <Button
+            android:id="@+id/stock_main_bn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/stock_main_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stock_main_topbar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/yh_main_bottom_bar_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/stock_main_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="代码名称"
+                android:textColor="@color/paper"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/stock_main_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="最新价"
+                android:textColor="@color/paper"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/stock_main_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="涨跌幅"
+                android:textColor="@color/paper"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/stock_main_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="0.43"
+            android:background="@drawable/read_adress_bg"
+            android:scrollbars="none" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/stock_main_tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <Button
+                    android:id="@+id/stock_main_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33333"
+                    android:background="@drawable/center_tab_default"
+                    android:text="添加自选股"
+                    android:textSize="17sp" />
+            </TableRow>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
